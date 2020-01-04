@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <main>
+            <h1 class="main-heading">Tip Calculator</h1>
+
+            <form>
+                <label for="bill">Bill total: </label>
+            
+                <input type="text" name="bill" id="bill" min="0" step="0.01" placeholder="$" required>
+                <div class="bill-input-required"></div>
+            
+
+                <h2>Select tip:</h2>
+                
+                <section class="radio">
+                    <div>
+                    <input type="radio" name="percentage" id="15" value="15" required>    
+                    <label for="15">15%</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="percentage" id="18" value="18">
+                    <label for="18">18%</label>
+                    </div>
+
+                    <div>
+                    <input type="radio" name="percentage" id="20" value="20">
+                    <label for="20">20%</label>
+                    </div>
+                    
+                    <div>
+                    <input type="radio" name="percentage" id="other" value="other">
+                    <label for="other">Other: </label>
+                    </div>
+
+                    <input type="text" name="percentage" min="0" step="0.01" id="other-percentage">
+                    
+                    <div class="tip-input-required"></div>
+                </section>
+
+                <a href="#" id="calculate-button">Calculate!</a>
+            </form>
+
+            <div class="tip-display tip-display-none">
+                <h2>Tip:</h2>
+                <div class="calculated-tip"></div>
+
+                <h2>Total bill including tip:</h2>
+                <div class="calculated-total"></div>
+            </div>
+
+        </main>
+    </body>
+
+    <script type="text/javascript" src="calculatorScript.js"></script>
+</html>

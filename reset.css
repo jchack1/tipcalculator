@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  padding:0;
+  margin: 0;
+}
+
+/*assume anytime we have a list inside a nav, we don't need bullets or padding*/
+nav ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
